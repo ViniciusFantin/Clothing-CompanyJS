@@ -12,6 +12,8 @@ import About from "./Pages/About";
 import Products from "./Pages/Products";
 import Info from "./Pages/Info";
 import NotFound from "./Pages/NotFound";
+import SearchForm from "./components/SearchForm";
+import Search from "./Pages/Search";
 
 function App() {
   return (
@@ -20,11 +22,13 @@ function App() {
       {/* Links com React Router */}
       <BrowserRouter>
         <Navbar />
+        <SearchForm />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products/:id" element={<Products />} />
           <Route path="/products/:id/info" element={<Info />} />
+          <Route path="/search" element={<Search />} />
           {/* No Match Route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
