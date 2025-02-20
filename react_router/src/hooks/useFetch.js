@@ -33,22 +33,26 @@ export const useFetch = (url) => {
           "Content-type": "application/json",
         },
       });
-      setMethod(method);
+      setMethod("DELETE");
       setItemId(data);
     }
   };
 
   useEffect(() => {
-    setLoading(true);
-
     const fetchData = async () => {
+      setLoading(true);
+
       try {
         const res = await fetch(url);
 
         const json = await res.json();
+
         setData(json);
+
+        setError(null);
       } catch (error) {
         console.log(error.message);
+
         setError("Ocorreu algum error");
       }
 
