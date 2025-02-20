@@ -3,9 +3,11 @@ import "./App.css";
 // config routes
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// PAges
+// Pages
 import Home from "./Pages/Home";
 import About from "./Pages/About";
+
+// components
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -13,9 +15,10 @@ function App() {
     <div className="App">
       <h1>React Router</h1>
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/" element={<About />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </div>
