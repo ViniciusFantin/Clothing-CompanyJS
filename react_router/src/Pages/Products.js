@@ -14,14 +14,14 @@ const Products = () => {
     <>
       <p>ID do produto: {id}</p>
       {error && <p>Ocorreu um erro... </p>}
-      {loading && <p>Carregando, um momento por favor...</p>}
+      {loading && <p>Loading, wait a minute...</p>}
       {product && (
         <div>
           <h1>{product.name}</h1>
           <p>R${product.price}</p>
 
           {/* Nested Route */}
-          <Link to={`/products/${product.id}/info`}>Mais informações</Link>
+          <Link to={`/products/${product.id}/info`}>More Info</Link>
         </div>
       )}
     </>

@@ -1,0 +1,25 @@
+.about {
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  list-style: none;
+  margin: 0 10px;
+  width: 25%;
+  margin: auto;
+  border-style: double;
+  border-color: black;
+  border-width: 20px;
+  margin-top: 40px;
+}
+
+.company {
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-radius: 10px;
+  margin-left: 20px;
+  width: 330px;
+  margin: auto;
+}

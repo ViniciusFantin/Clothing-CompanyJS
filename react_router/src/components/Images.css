@@ -1,0 +1,14 @@
+.image-container {
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.image-container img {
+  width: 18%;
+  border-radius: 10px;
+}

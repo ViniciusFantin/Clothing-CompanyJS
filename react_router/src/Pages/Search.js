@@ -9,7 +9,7 @@ const Search = () => {
   const { data: items, loading, error } = useFetch(url);
   return (
     <div>
-      <h1>Resultados disponíveis: </h1>
+      <h1>Results: </h1>
       <ul className="products">
         {items &&
           items.map((item) => (
@@ -18,7 +18,7 @@ const Search = () => {
               <p>R$: {item.price}</p>
 
               {/* rota dinâmica */}
-              <Link to={`/products/${item.id}`}>Detalhes</Link>
+              <Link to={`/products/${item.id}`}>Details</Link>
             </li>
           ))}
       </ul>
