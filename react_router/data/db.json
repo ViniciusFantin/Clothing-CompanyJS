@@ -2,18 +2,18 @@
   "products": [
     {
       "id": "1",
-      "name": "Camiseta",
-      "price": 89.9
+      "name": "Neo-Architect Shirt",
+      "price": 490
     },
     {
       "id": "2",
-      "name": "Calça",
-      "price": 250
+      "name": "Cyber Cargo Pants",
+      "price": 1190
     },
     {
       "id": "3",
-      "name": "Sapato",
-      "price": 690
+      "name": "Titan Tech Sneaker",
+      "price": 3000
     }
   ]
 }
